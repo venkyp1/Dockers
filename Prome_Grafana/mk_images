@@ -1,0 +1,2 @@
+docker build . -t rest_api:latest  -f rest_api.Dockerfile --no-cache
+docker build . -t prome:latest -f prome.Dockerfile --no-cache
