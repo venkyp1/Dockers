@@ -123,7 +123,7 @@ Venky>
 
    Use: http://localhost:9090/metrics
 
-  Make changes to Grafana interface to on the top left refresh time to 5s and change time-range to last 30 minutes.
+  Make changes to Grafana interface to on the top right refresh time to 5s and change time-range to last 30 minutes.
 
 ###  Generate API calls
 
