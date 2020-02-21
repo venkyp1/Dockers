@@ -127,4 +127,8 @@ Venky>
 
 ### Write PromQL query to monitor.
 
+ ![Grafana View](https://github.com/venkyp1/Dockers/blob/master/Prome_Grafana/grafana_image.png)
 
+### See the same in Prometheus
+
+ ![Prometheus View](https://github.com/venkyp1/Dockers/blob/master/Prome_Grafana/prome_image.png)
