@@ -8,23 +8,28 @@ as needed to Grafana since Prometheus already provides that and many more.
 
   To see all the metrics provided by Prometheus:
 
-  curl 
+  curl 0.0.0.0:9090/metrics
 
   rest_api.py: Python App
   call_apis.py: To generate API calls and traffic
   measurements.py: Provides Prometheus counter and histogram support
+  mk_images: Script to build rest-app and prometheus docker images
+  docker-compose.yml: To bring up all the containers.
   
+  This setup is tested on local macbook.
 
 ### Build the images:
 
 ```
-
+Run: mk_images
 
 ```
 
 ### Start the containers and check status:
 
 ```
+
+Run the containers as daemons.
 
 Venky> docker-compose up -d
 WARNING: The Docker Engine you're using is running in swarm mode.
@@ -124,8 +129,7 @@ Venky>
 
   Run: python call_apis.py
 
-
-### Write PromQL query to monitor.
+### Write PromQL query to monitor rest calls to /version endpoint and returns 200
 
  ![Grafana View](https://github.com/venkyp1/Dockers/blob/master/Prome_Grafana/grafana_image.png)
 
