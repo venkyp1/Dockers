@@ -10,7 +10,6 @@ import threading
 
 
 def start_api_queries(delay):
-   import urllib3
    endpoints = ['random', 'version' ]
    while True:
       api_count = len(endpoints)
@@ -24,9 +23,8 @@ def start_api_queries(delay):
 
 
 if __name__ == '__main__':
-  if len(sys.argv) < 2:
-     count = 5
-  else:
+  count = 5
+  if len(sys.argv) > 1:    # Just get the second arg
      count = int(sys.argv[1])
   if count < 1 or count > 20:
      count = 5
